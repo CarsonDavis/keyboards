@@ -1,0 +1,46 @@
+metadata:
+  engine: 4.0.2
+  version: 0.1
+  author: Carson Davis
+points:
+  zones:
+    matrix:
+      anchor:
+        rotate: 0
+      columns:
+        pinky_two:
+        pinky:
+        ring:
+          key.splay: -2
+          key.origin: [-30, -30]
+          key.stagger: 12
+        middle:
+          key.stagger: 5
+        index:
+          key.stagger: -6
+        inner:
+          key.stagger: -5
+      rows:
+        bottom:
+        home:
+        top:
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-30, -30]
+      columns:
+        near:
+        home:
+          key.spread: 21.25
+          key.splay: -28
+          key.origin: [-11.75, -9]
+        far:
+          key.spread: 21.25
+          key.splay: -28
+          key.origin: [-9.5, -9]
+      rows:
+        thumb:
+  rotate: 0
+  mirror:
+    ref: matrix_pinky_home
+    distance: 250
