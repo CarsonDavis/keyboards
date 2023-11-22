@@ -8,13 +8,12 @@ points:
       anchor:
         rotate: 0
       columns:
-        pinky_two:
         pinky:
         ring:
-          key.splay: -2
-          key.origin: [-30, -30]
+          key.splay: -5
           key.stagger: 12
         middle:
+          key.splay: -7
           key.stagger: 5
         index:
           key.stagger: -6
