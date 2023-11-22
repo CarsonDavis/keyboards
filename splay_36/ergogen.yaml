@@ -11,10 +11,10 @@ points:
         pinky:
         ring:
           key.splay: -5
-          key.stagger: 12
+          key.stagger: 8
         middle:
           key.splay: -7
-          key.stagger: 5
+          key.stagger: 4
         index:
           key.stagger: -6
         inner:
