@@ -9,15 +9,6 @@ units:
   # padding variables
   px: kx + 2
   py: ky + 2 
-outlines: 
-  raw:
-    - what: rectangle
-      where: true
-      size: [kx, ky]
-  keys:
-    - what: rectangle
-      where: true
-      size: [kx-0.5,ky-0.5]
 points:
   zones:
     alpha:
@@ -53,18 +44,70 @@ points:
         ref: alpha_inner_bottom
         shift: [-30, -25]
       columns:
-        near:
+        pinky:
         home:
           key.spread: 18
           key.splay: -25
           key.origin: [-11.75, -9]
-        far:
+        index:
           key.spread: 18
           key.splay: -25
           key.origin: [-9.5, -9]
       rows:
         thumb:
   rotate: 0
+outlines: 
+  raw:
+    - what: rectangle
+      where: true
+      size: [kx, ky]
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5,ky-0.5]
+  board:
+      - what: polygon
+        operation: stack
+        points:
+          # index cluster
+          - ref: alpha_inner_top
+            shift: [.5px, .5py]
+          - ref: alpha_index_top
+            shift: [-.5px, .5py]
+          # middle
+          - ref: alpha_middle_top
+            shift: [.5px, .5py]
+          - ref: alpha_middle_top
+            shift: [-.5px, .5py]
+          # ring
+          - ref: alpha_ring_top
+            shift: [.5px, .5py]
+          - ref: alpha_ring_top
+            shift: [-.5px, .5py]
+          # pinky top
+          - ref: alpha_pinky_top
+            shift: [.5px, .5py]
+          - ref: alpha_pinky_top
+            shift: [-.5px, .5py]
+          # pinky bottom
+          - ref: alpha_pinky_bottom
+            shift: [-.5px, -.5py]
+          - ref: alpha_pinky_bottom
+            shift: [.5px, -.5py]
+          # thumb cluster
+          - ref: thumbfan_pinky_thumb
+            shift: [-.5px, -.5py]
+          - ref: thumbfan_home_thumb
+            shift: [-.5px, -.5py]
+          - ref: thumbfan_index_thumb
+            shift: [-.5px, -.5py]
+          - ref: thumbfan_index_thumb
+            shift: [.5px, -.5py]
+          - ref: thumbfan_index_thumb
+            shift: [.5px, .5py]
+          # micro controller
+          - ref: alpha_inner_top
+            shift: [1.5px, .5py]
 #  mirror:
 #    ref: alpha_pinky_home
-#    distance: 200
+#    distance: 200 
