@@ -108,6 +108,7 @@ outlines:
           # micro controller
           - ref: alpha_inner_top
             shift: [1.5px, .5py]
+        fillet: 2
 #  mirror:
 #    ref: alpha_pinky_home
 #    distance: 200 
