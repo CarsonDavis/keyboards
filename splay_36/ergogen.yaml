@@ -2,44 +2,69 @@ metadata:
   engine: 4.0.2
   version: 0.1
   author: Carson Davis
+units:
+  # proxy spacingg variables
+  kx: cx
+  ky: cy
+  # padding variables
+  px: kx + 2
+  py: ky + 2 
+outlines: 
+  raw:
+    - what: rectangle
+      where: true
+      size: [kx, ky]
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5,ky-0.5]
 points:
   zones:
-    matrix:
+    alpha:
+      key:
+        padding: 1ky
+        spread: 1kx
       anchor:
         rotate: -15
       columns:
         pinky:
-        ring:
-          key.splay: -5
-          key.stagger: 8
-        middle:
-          key.splay: -7
-          key.stagger: 4
-        index:
-          key.stagger: -6
-        inner:
-          key.stagger: -5
+        ring.key:
+            spread: kx+1
+            splay: -7
+            stagger: 15
+        middle.key:
+          spread: kx+.5
+          splay: -3
+          stagger: 4
+        index.key:
+          splay: -3
+          stagger: -6
+        inner.key:
+          stagger: 0
       rows:
         bottom:
         home:
         top:
     thumbfan:
+      key:
+        padding: 1ky
+        spread: 1kx-3
       anchor:
-        ref: matrix_inner_bottom
-        shift: [-30, -30]
+        ref: alpha_inner_bottom
+        shift: [-30, -25]
       columns:
         near:
         home:
-          key.spread: 21.25
-          key.splay: -28
+          key.spread: 18
+          key.splay: -25
           key.origin: [-11.75, -9]
         far:
-          key.spread: 21.25
-          key.splay: -28
+          key.spread: 18
+          key.splay: -25
           key.origin: [-9.5, -9]
       rows:
         thumb:
   rotate: 0
-  mirror:
-    ref: matrix_pinky_home
-    distance: 200
+#  mirror:
+#    ref: alpha_pinky_home
+#    distance: 200
