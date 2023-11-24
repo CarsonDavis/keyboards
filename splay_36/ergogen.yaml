@@ -106,9 +106,12 @@ outlines:
           - ref: thumbfan_index_thumb
             shift: [.5px, .5py]
           # micro controller
+          - ref: alpha_inner_bottom
+            shift: [2px, -.5py]
           - ref: alpha_inner_top
-            shift: [1.5px, .5py]
+            shift: [2px, .5py]
         fillet: 2
-#  mirror:
-#    ref: alpha_pinky_home
-#    distance: 200 
+  combo:
+  - name: board
+  - operation: subtract
+    name: keys
