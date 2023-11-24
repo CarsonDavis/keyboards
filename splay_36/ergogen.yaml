@@ -7,8 +7,8 @@ units:
   kx: cx
   ky: cy
   # padding variables
-  px: kx + 2
-  py: ky + 2 
+  px: kx + 4
+  py: ky + 4 
 points:
   zones:
     alpha:
@@ -71,9 +71,9 @@ outlines:
         points:
           # index cluster
           - ref: alpha_inner_top
-            shift: [.5px, .5py]
+            shift: [.5kx, .5py]
           - ref: alpha_index_top
-            shift: [-.5px, .5py]
+            shift: [-.5kx, .5py]
           # middle
           - ref: alpha_middle_top
             shift: [.5px, .5py]
@@ -81,7 +81,7 @@ outlines:
             shift: [-.5px, .5py]
           # ring
           - ref: alpha_ring_top
-            shift: [.5px, .5py]
+            shift: [.5kx, .5py]
           - ref: alpha_ring_top
             shift: [-.5px, .5py]
           # pinky top
@@ -93,18 +93,18 @@ outlines:
           - ref: alpha_pinky_bottom
             shift: [-.5px, -.5py]
           - ref: alpha_pinky_bottom
-            shift: [.5px, -.5py]
+            shift: [.5kx, -.5py]
           # thumb cluster
           - ref: thumbfan_pinky_thumb
-            shift: [-.5px, -.5py]
+            shift: [-.5kx, -.5py]
           - ref: thumbfan_home_thumb
-            shift: [-.5px, -.5py]
+            shift: [-.5kx, -.5py]
           - ref: thumbfan_index_thumb
-            shift: [-.5px, -.5py]
+            shift: [-.5kx, -.5py]
           - ref: thumbfan_index_thumb
             shift: [.5px, -.5py]
           - ref: thumbfan_index_thumb
-            shift: [.5px, .5py]
+            shift: [.5px, .5ky]
           # micro controller
           - ref: alpha_inner_bottom
             shift: [2px, -.5py]
