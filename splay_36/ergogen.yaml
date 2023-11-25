@@ -131,3 +131,11 @@ pcbs:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
+      diode:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
