@@ -108,9 +108,9 @@ outlines:
             shift: [.5px, .5ky]
           # micro controller
           - ref: alpha_inner_bottom
-            shift: [2px, -.5py]
+            shift: [1.5px, -.5py]
           - ref: alpha_inner_top
-            shift: [2px, .5py]
+            shift: [1.5px, .5py]
         fillet: 2
   combo:
   - name: board
@@ -145,5 +145,5 @@ pcbs:
           orientation: "down"
         where:
           ref: alpha_inner_top
-          shift: [22,-10]
+          shift: [21,-10]
           rotate: -90
