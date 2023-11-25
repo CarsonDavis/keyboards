@@ -8,7 +8,9 @@ units:
   ky: cy
   # padding variables
   px: kx + 4
-  py: ky + 4 
+  py: ky + 4
+  micro_x: 21
+  micro_y: -10
 points:
   zones:
     alpha:
@@ -145,7 +147,7 @@ pcbs:
           orientation: "down"
         where:
           ref: alpha_inner_top
-          shift: [21,-10]
+          shift: [micro_x,micro_y]
           rotate: -90
       oled:
         what: oled
@@ -155,5 +157,14 @@ pcbs:
           SCL: P3
         where:
           ref: alpha_inner_top
-          shift: [21-6,-10-20]
+          shift: [micro_x-6,micro_y-20]
           rotate: 90
+      reset:
+        what: button
+        params:
+          from: GND
+          to: RST
+        where:
+          ref: alpha_inner_top
+          shift: [micro_x+8, micro_y-25]
+          rotate: -90
