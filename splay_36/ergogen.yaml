@@ -147,3 +147,13 @@ pcbs:
           ref: alpha_inner_top
           shift: [21,-10]
           rotate: -90
+      oled:
+        what: oled
+        params:
+          side: "F"
+          SDA: P2
+          SCL: P3
+        where:
+          ref: alpha_inner_top
+          shift: [21-6,-10-20]
+          rotate: 90
