@@ -139,3 +139,11 @@ pcbs:
           to: "{{row_net}}"
         adjust:
           shift: [0, -5]
+      promicro:
+        what: promicro
+        params:
+          orientation: "down"
+        where:
+          ref: alpha_inner_top
+          shift: [22,-10]
+          rotate: -90
