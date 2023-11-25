@@ -16,7 +16,8 @@ points:
         padding: 1ky
         spread: 1kx
       anchor:
-        rotate: -15
+        rotate: 11
+        shift: [100, -100]
       columns:
         pinky:
         ring.key:
@@ -115,3 +116,8 @@ outlines:
   - name: board
   - operation: subtract
     name: keys
+pcbs:
+  main:
+    outlines:
+      main:
+        outline: board
