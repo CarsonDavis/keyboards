@@ -168,3 +168,14 @@ pcbs:
           ref: alpha_inner_top
           shift: [micro_x+8, micro_y-25]
           rotate: -90
+      jstph:
+        what: jstph
+        params:
+          designator: "JST"
+          side: "F"
+          pos: VCC
+          neg: GND
+        where:
+          ref: alpha_inner_top
+          shift: [micro_x+2, micro_y-25]
+          rotate: -90
