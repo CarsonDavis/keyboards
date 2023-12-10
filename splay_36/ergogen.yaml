@@ -3,7 +3,7 @@ metadata:
   version: 0.1
   author: Carson Davis
 units:
-  # proxy spacingg variables
+  # proxy spacing variables
   kx: cx
   ky: cy
   # padding variables
