@@ -18,14 +18,15 @@ points:
         padding: 1ky
         spread: 1kx
       anchor:
-        rotate: 11
+        rotate: 12 # this should be the sum of the splays
         shift: [100, -100]
       columns:
         pinky:
         ring.key:
             spread: kx+1
-            splay: -7
+            splay: -6
             stagger: 15
+            column_net: P0
         middle.key:
           spread: kx+.5
           splay: -3
@@ -37,6 +38,7 @@ points:
           stagger: 0
       rows:
         bottom:
+          row_net: P1
         home:
         top:
     thumbfan:
