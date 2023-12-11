@@ -181,3 +181,11 @@ pcbs:
           ref: alpha_inner_top
           shift: [micro_x+2, micro_y-25]
           rotate: -90
+      holeTopLeft:
+        what: mountinghole
+        where:
+          ref: [alpha_inner_top]
+cases:
+  bottom:
+    - name: board
+      extrude: 1
