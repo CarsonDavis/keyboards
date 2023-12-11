@@ -13,4 +13,6 @@ Now, when we are editing, we will press control a to select our board, then r or
 For better grid snapping while tracing, you can change the grid size to be smaller. It is located along the top bar of the screen.
 
 ## Generating Cases
-npx @jscad/cli@1 output/cases/bottom.jscad -of stla -o bottom.stl
+Convert the jscad to stl
+
+`npx @jscad/cli@1 output/cases/bottom.jscad -of stla -o bottom.stl`
